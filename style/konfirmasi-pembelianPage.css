@@ -1,0 +1,243 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  color: var(--bg-primary);
+}
+
+body {
+  background-color: white;
+}
+
+:root {
+  --bg-primary: #362a29;
+  --bg-light: white;
+}
+
+.container {
+  /* background-color: salmon; */
+  max-width: 100%;
+  margin: auto;
+}
+
+/* content */
+.section-content {
+  max-width: 1440px;
+  margin: auto;
+  background-image: url(../img/konfirmasi-pembelianPage-bg.png);
+}
+
+.section-content .back {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.wrapper-content {
+  padding: 3rem 7.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 3rem;
+}
+
+.wrapper-content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wrapper-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.wrapper-content .deadline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.main {
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-pembayaran {
+  display: flex;
+  flex-direction: column;
+  width: 443px;
+}
+
+.detail-pembayaran h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.rincian-detail {
+  display: flex;
+  gap: 4rem;
+  /* margin-top: 0.5rem; */
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.detail-pembayaran .judul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding-top: 1.5rem;
+}
+
+.detail-pembayaran .nilai {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding-top: 1.5rem;
+}
+
+.detail-pembayaran .total {
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--bg-primary);
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 9rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* transfer */
+.transfer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transfer h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.transfer h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.rekening {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  border: 1px solid var(--bg-primary);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.rekening p{
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.no-rek {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.no-rek img {
+  height: 2rem;
+}
+
+
+.jumlah {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  border: 1px solid var(--bg-primary);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button button {
+  all: unset;
+  padding: 0.5rem 3.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-image: linear-gradient(to bottom right, #ffd700, #f6a156);
+  border-radius: 15px 0 15px 0;
+}
+
+.button button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom right, #f5d002, #f09d55);
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  .wrapper-content {
+    padding: 5rem 2rem 2rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .wrapper-content .title {
+    gap: 0;
+  }
+
+  .wrapper-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper-content .deadline {
+    font-size: 1.25rem;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  /* transfer */
+  .transfer {
+    width: 100%;
+  }
+
+  .transfer h2 {
+    font-size: 1rem;
+  }
+
+  .transfer h3 {
+    font-size: 1.25rem;
+  }
+
+  .no-rek img {
+    height: 1.5rem;
+  }
+
+  /* detail pembayaran */
+  .detail-pembayaran {
+    display: none;
+  }
+
+  /* button */
+  /* .button {
+    justify-content: center;
+  } */
+
+  .button button {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+}

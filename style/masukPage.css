@@ -1,0 +1,141 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  color: var(--bg-primary);
+}
+
+body {
+  background-color: white;
+}
+
+:root {
+  --bg-primary: #362a29;
+  --bg-light: white;
+}
+
+.container {
+  /* background-color: salmon; */
+  max-width: 100%;
+  margin: auto;
+}
+
+.section-login {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.wrapper-login {
+  height: 100vh;
+  padding: 6.5rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.wrapper-login .input {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  /* border-left: 1px solid var(--bg-primary); */
+  box-shadow: 0px 0px 1.6px rgba(0, 0, 0, 0), 0px 0px 3.8px rgba(0, 0, 0, 0.011), 0px 0px 7.1px rgba(0, 0, 0, 0.031), 0px 0px 12.7px rgba(0, 0, 0, 0.05), 0px 0px 23.8px rgba(0, 0, 0, 0.063), 0px 0px 57px rgba(0, 0, 0, 0.07);
+
+  border-radius: 20px;
+}
+
+.input h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+}
+
+.username input {
+  width: 100%;
+  padding: 0.5rem 3rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid var(--bg-primary);
+}
+
+.password {
+  display: flex;
+  align-items: center;
+}
+
+.password input {
+  width: 100%;
+  padding: 0.5rem 3rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid var(--bg-primary);
+}
+
+.input img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  padding-left: 1rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.625rem;
+}
+
+.button button {
+  width: 100%;
+  border: 1px solid var(--bg-primary);
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(#f3bc13, #f8af3e);
+  font-size: 1rem;
+}
+
+.button button:hover {
+  background-image: linear-gradient(#ebb412, #f0a73b);
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: #f5b624;
+  font-weight: 600;
+}
+
+.button a:hover {
+  text-decoration: underline;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  .image {
+    display: none;
+  }
+
+  .wrapper-login {
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+  }
+
+  .wrapper-login h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .wrapper-login .input {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+  }
+}

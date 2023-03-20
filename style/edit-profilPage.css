@@ -1,0 +1,131 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  color: var(--bg-primary);
+}
+
+body {
+  background-color: white;
+}
+
+:root {
+  --bg-primary: #362a29;
+  --bg-light: white;
+}
+
+.container {
+  /* background-color: salmon; */
+  max-width: 100%;
+  margin: auto;
+}
+
+.section-edit {
+  max-width: 1440px;
+  margin: auto;
+  padding: 5rem 24rem;
+}
+
+.section-edit .back {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.wrapper-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--bg-primary);
+  border-radius: 30px;
+}
+
+.wrapper-edit h1 {
+  font-size: 2rem;
+}
+
+.wrapper-edit .profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrapper-edit .profil img {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wrapper-edit .profil form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#myfile {
+  width: 190px;
+}
+
+.wrapper-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.wrapper-input h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.wrapper-input .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-input p {
+  width: 360px;
+  border: 1px solid var(--bg-primary);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.wrapper-input input {
+  width: 360px;
+  border: 1px solid var(--bg-primary);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.button {
+  align-items: center;
+  width: 100%;
+}
+
+.button button {
+  width: 100%;
+  border: 1px solid var(--bg-primary);
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(#f3bc13, #f8af3e);
+  font-size: 1rem;
+}
+
+.button button:hover {
+  background-image: linear-gradient(#ebb412, #f0a73b);
+  cursor: pointer;
+}

@@ -1,0 +1,182 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  color: var(--bg-primary);
+}
+
+body {
+  background-color: white;
+}
+
+:root {
+  --bg-primary: #362a29;
+  --bg-light: white;
+}
+
+.container {
+  /* background-color: salmon; */
+  max-width: 100%;
+  margin: auto;
+}
+
+.section-navbar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0.5rem 4rem;
+  box-shadow: 0 4px 20px rgba(92, 92, 92, 0.25);
+  z-index: 10000;
+}
+
+.nav-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-branding {
+  list-style: none;
+}
+
+.nav-branding li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 270;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* footer */
+footer {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.wrapper-footer {
+  background-color: white;
+  text-align: center;
+  padding: 1.25rem;
+  box-shadow: 0 -2px 30px rgba(92, 92, 92, 0.25);
+}
+
+/* content */
+.section-content {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.section-content .back {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.wrapper-content {
+  padding: 2rem 10rem 1rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-image: url(../img/tentangPage-bg.png);
+  background-position-y: -30px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.title p {
+  font-size: 1.125rem;
+}
+
+.wrapper-card {
+  display: flex;
+  gap: 4.3rem;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 0.2px 1.1px rgba(0, 0, 0, 0.053), 0.1px 0.4px 2.5px rgba(0, 0, 0, 0.082), 0.1px 0.8px 4.8px rgba(0, 0, 0, 0.105), 0.2px 1.3px 8.5px rgba(0, 0, 0, 0.122), 0.4px 2.5px 15.9px rgba(0, 0, 0, 0.135),
+    1px 6px 38px rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+}
+
+.image1 {
+  background-image: url(../img/tentangPage-fattah.jpeg);
+  width: 265px;
+  height: 226px;
+  background-size: cover;
+  background-position-y: -20px;
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 0 0;
+}
+
+.image2 {
+  background-image: url(../img/nickymicko.jpeg);
+  width: 265px;
+  height: 226px;
+  background-size: cover;
+  background-position-y: -60px;
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 0 0;
+}
+
+.image3 {
+  background-image: url(../img/irfeanan.jpeg);
+  width: 265px;
+  height: 226px;
+  background-size: cover;
+  background-position-y: -60px;
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 0 0;
+}
+
+.desc {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.desc h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 0.8rem;
+  padding-top: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
